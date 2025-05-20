@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pengalaman Kantor</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      background: linear-gradient(to bottom right, #000d36 60%, #069ab4 100%);
+    }
+
+    nav {
+      width: 200px;
+      background: #001235;
+      height: 100vh;
+      padding: 2rem 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    .main-content {
+      margin-left: 200px;
+      width: calc(100% - 200px);
+    }
+
+    header {
+      background: linear-gradient(to bottom right, #000e3a 30%, #069ab4 70%);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem;
+      color: white;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      color: whitesmoke;
+      position: relative;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: whitesmoke;
+      color: #001935;
+      border-left: 5px solid #0aa2c0;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    blockquote {
+      background: rgba(255,255,255,0.1);
+      padding: 1rem;
+      border-left: 5px solid #00e5ff;
+      margin: 1rem 0;
+      font-style: italic;
+      color: #e0f7fa;
+      border-radius: 5px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    blockquote.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "📌";
+      margin-right: 8px;
+      color: #00e5ff;
+    }
+
+    footer {
+      background: linear-gradient(#001b3f, #0aa2c0);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: whitesmoke;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .main-content {
+        margin-left: 0;
+        width: 100%;
+      }
+
+      .skills {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="beranda.html">Beranda</a>
+    <a href="microsoft.html">Microsoft Office</a>
+    <a href="komunikasi.html">Komunikasi</a>
+    <a href="administrasi.html">Administrasi</a>
+    <a href="jasa.html">Jasa Ketik</a>
+    <a href="pengalaman.html">Pengalaman Kantor</a>
+    <a href="teknisi.html">Teknisi Jaringan</a>
+  </nav>
+
+  <div class="main-content">
+    <header>
+      <h1>Pengalaman Kantor</h1>
+      <p>Dari kopi pagi sampai deadline sore begitulah ritme dinamisnya</p>
+    </header>
+
+    <div class="container">
+      <h2>🏢 Sekilas Cerita</h2>
+      <p>Bekerja di kantor itu seperti jadi pemeran utama dalam drama kerja harian. Ada momen tegang saat deadline mengejar, ada juga tawa lepas saat makan siang bareng tim. Selama beberapa tahun, saya telah menempati berbagai posisi administratif dan support di lingkungan perkantoran yang beragam—dari yang serba formal, sampai yang vibes-nya kekeluargaan.</p>
+      
+      <p>Saya belajar bahwa kunci bertahan di dunia perkantoran bukan cuma skill teknis, tapi juga mental tangguh dan komunikasi yang asyik. Mulai dari menerima tamu, menyusun surat masuk-keluar, mengarsipkan dokumen, hingga menjadi penghubung antar divisi—semua saya jalani dengan semangat dan rasa ingin tahu yang tinggi.</p>
+
+      <h2>💼 Tugas & Peran yang Saya Jalani</h2>
+      <div class="skills">
+        <div class="card">
+          <h3>Front Office</h3>
+          <p>Menerima tamu dengan ramah, menjawab telepon, dan menyampaikan informasi secara profesional. Kadang jadi 'penjaga gawang' info penting!</p>
+        </div>
+        <div class="card">
+          <h3>Pengarsipan & Dokumentasi</h3>
+          <p>Menata berkas agar mudah diakses, digitalisasi dokumen, dan menjaga kerahasiaan arsip kantor. Rapih dan aman!</p>
+        </div>
+        <div class="card">
+          <h3>Pembuatan Surat & Notulensi</h3>
+          <p>Menulis surat resmi dan notulen rapat dengan gaya bahasa formal yang tepat sasaran dan mudah dipahami.</p>
+        </div>
+      </div>
+
+      <h2>🗣️ Kesan Rekan Kerja</h2>
+      <blockquote>"Dia itu orang yang multitasking, kerjaan numpuk tapi tetap bisa tenang dan senyum-senyum. Salut!"<br> Rekan dari bagian Keuangan</blockquote>
+      <blockquote>"Notulen rapat yang dibuatnya selalu rapi dan cepat dikirim. Komunikatif banget juga kalau ditanya-tanya soal data."<br> Kepala Divisi Operasional</blockquote>
+
+      <h2>🚀 Nilai & Pelajaran Hidup</h2>
+      <ul>
+        <li>Jangan tunda pekerjaan kecil, karena bisa jadi besar saat diabaikan.</li>
+        <li>Selalu catat — otak manusia terbatas, dokumen tidak.</li>
+        <li>Hargai semua orang, dari OB sampai atasan. Semua punya peran penting.</li>
+      </ul>
+
+      <p>Kalau kamu mencari seseorang yang bisa diandalkan dalam urusan kantor—baik di depan layar, di balik meja, maupun di tengah rapat—mungkin aku orangnya 😉</p>
+    </div>
+
+    <footer>
+      &copy; 2025 Ririn Widyasari. Seluruh hak cipta dilindungi.
+    </footer>
+  </div>
+
+  <script>
+    // Scroll animasi ringan
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.card, blockquote').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>

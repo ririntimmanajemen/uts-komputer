@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Microsoft Office</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      background: linear-gradient(to bottom right, #000d36 60%, #069ab4 100%);
+    }
+
+    nav {
+      width: 220px;
+      background: #001235;
+      height: 100vh;
+      padding: 2rem 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 8px;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      transform: translateX(5px);
+    }
+
+    .main-content {
+      margin-left: 220px;
+      width: calc(100% - 220px);
+    }
+
+    header {
+      background: linear-gradient(to bottom right, #00214e 30%, #00bdd6 70%);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem;
+      color: white;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      color: #bbdefb;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section h2 svg {
+      width: 30px;
+      height: 30px;
+      fill: #bbdefb;
+    }
+
+    .card,
+    .card-word,
+    .card-excel,
+    .card-powerpoint {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .card {
+      color: #2B579A;
+      border-left: 5px solid #2B579A;
+    }
+
+    .card-word {
+      color: #2B579A;
+      border-left: 5px solid #2B579A;
+    }
+
+    .card-excel {
+      color: #217346;
+      border-left: 5px solid #217346;
+    }
+
+    .card-powerpoint {
+      color: #B7472A;
+      border-left: 5px solid #B7472A;
+    }
+
+    .card.show,
+    .card-word.show,
+    .card-excel.show,
+    .card-powerpoint.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card:hover,
+    .card-word:hover,
+    .card-excel:hover,
+    .card-powerpoint:hover {
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+      transform: translateY(-5px);
+    }
+
+    .card h3,
+    .card-word h3,
+    .card-excel h3,
+    .card-powerpoint h3 {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    .card h3 svg,
+    .card-word h3 svg,
+    .card-excel h3 svg,
+    .card-powerpoint h3 svg {
+      width: 22px;
+      height: 22px;
+      fill: #1976d2;
+    }
+
+    footer {
+      background: linear-gradient(#001b3f, #0aa2c0);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: whitesmoke;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .main-content {
+        margin-left: 0;
+        width: 100%;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="beranda.html">Beranda</a>
+    <a href="microsoft.html">Microsoft Office</a>
+    <a href="komunikasi.html">Komunikasi</a>
+    <a href="administrasi.html">Administrasi</a>
+    <a href="jasa.html">Jasa Ketik</a>
+    <a href="pengalaman.html">Pengalaman Kantor</a>
+    <a href="teknisi.html">Teknisi Jaringan</a>
+  </nav>
+
+  <div class="main-content">
+    <header>
+      <h1>Microsoft Office</h1>
+      <p>Keahlian mendalam dalam Microsoft Office untuk menunjang produktivitas kerja secara profesional</p>
+    </header>
+
+    <div class="container">
+      <section class="section">
+        <h2>
+          <!-- Icon: Briefcase -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 6h-4V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v9a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-9a2 2 0 0 0-2-2zM9 4h6v2H9z"/></svg>
+          Pengalaman Profesional
+        </h2>
+        <div class="card">
+          <p>Dengan pengalaman lebih dari 4 tahun, saya telah menjadi andalan dalam penggunaan Microsoft Office di lingkungan kantor, mulai dari pembuatan dokumen Word yang terstruktur, pengolahan data kompleks di Excel, hingga pembuatan presentasi menarik dengan PowerPoint.</p>
+          <p>Kecepatan dan ketelitian dalam menyelesaikan tugas-tugas administratif serta pengelolaan data secara akurat selalu menjadi prioritas dalam pekerjaan saya.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>
+          <!-- Icon: Tools -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 6.5a5.5 5.5 0 0 0-7.776 7.776l-1.4 1.4-2.828-2.828-2.12 2.121 4.95 4.95 2.121-2.121-2.828-2.828 1.4-1.4A5.5 5.5 0 0 0 22 6.5zM5.5 2A3.5 3.5 0 0 0 2 5.5 3.5 3.5 0 0 0 5.5 9H7v2H5.5A5.5 5.5 0 0 1 0 5.5 5.5 5.5 0 0 1 5.5 0h2v2H5.5z"/></svg>
+          Keahlian Utama
+        </h2>
+        <div class="card-word">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2h9a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm1.5 14l1.5-5 1.5 5h1.5l-2-6h-1.5l-2 6h1.5z"/></svg>
+            Microsoft Word
+          </h3>
+          <p>Ahli dalam membuat dokumen resmi, laporan, dan surat menyurat dengan format profesional dan efisien.</p>
+        </div>
+        <div class="card-excel">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm14.5 5.5-2 5-2-5h-2l3 7-3 7h2l2-5 2 5h2l-3-7 3-7h-2z"/></svg>
+            Microsoft Excel
+          </h3>
+          <p>Mahir dalam penggunaan rumus, tabel pivot, dan analisis data untuk menyajikan informasi yang mudah dipahami.</p>
+        </div>
+        <div class="card-powerpoint">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 14v-4h-2v-2h4v6h-2z"/></svg>
+            Microsoft PowerPoint
+          </h3>
+          <p>Berpengalaman membuat presentasi visual yang menarik dan komunikatif untuk berbagai kebutuhan bisnis dan training.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>
+          <!-- Icon: Lightbulb -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 21h6v-1.5H9V21zm3-19a7 7 0 0 0-7 7c0 3.74 3.92 6.3 5.06 6.8v2.2h3.88v-2.2c1.14-.5 5.06-3.06 5.06-6.8a7 7 0 0 0-7-7z"/></svg>
+          Pendekatan dan Soft Skills
+        </h2>
+        <div class="card">
+          <p>Saya mengedepankan ketelitian, kecepatan, dan kreativitas dalam mengelola dokumen dan data. Komunikasi yang efektif dengan tim dan kemampuan beradaptasi dengan berbagai kebutuhan menjadikan pekerjaan Microsoft Office saya selalu relevan dan bermanfaat.</p>
+          <p>Selain itu, saya juga terbiasa melakukan pelatihan singkat kepada kolega untuk meningkatkan kemampuan mereka dalam Microsoft Office, sehingga meningkatkan efisiensi kerja secara tim.</p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      &copy; 2025 Ririn Widyasari. Seluruh hak cipta dilindungi.
+    </footer>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.card, .card-word, .card-excel, .card-powerpoint').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+
+</body>
+</html>

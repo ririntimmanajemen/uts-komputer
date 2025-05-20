@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Administrasi</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      background: linear-gradient(to bottom right, #000d36 60%, #069ab4 100%);
+    }
+
+    nav {
+      width: 220px;
+      background: #001235;
+      height: 100vh;
+      padding: 2rem 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 8px;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      transform: translateX(5px);
+    }
+
+    .main-content {
+      margin-left: 220px;
+      width: calc(100% - 220px);
+    }
+
+    header {
+      background: linear-gradient(to bottom right, #00214e 30%, #00bdd6 70%);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem;
+      color: white;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      color: #e0f7fa;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: white;
+      color: #002c47;
+      border-left: 5px solid #00c9ed;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card:hover {
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: linear-gradient(to right, #001e46, #069ab4);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: whitesmoke;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .main-content {
+        margin-left: 0;
+        width: 100%;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="beranda.html">Beranda</a>
+    <a href="microsoft.html">Microsoft Office</a>
+    <a href="komunikasi.html">Komunikasi</a>
+    <a href="administrasi.html">Administrasi</a>
+    <a href="jasa.html">Jasa Ketik</a>
+    <a href="pengalaman.html">Pengalaman Kantor</a>
+    <a href="teknisi.html">Teknisi Jaringan</a>
+  </nav>
+
+  <div class="main-content">
+    <header>
+      <h1>Administrasi</h1>
+      <p>Menunjang kelancaran operasional melalui keterampilan administrasi yang rapi dan efisien</p>
+    </header>
+
+    <div class="container">
+      <section class="section">
+        <h2>📂 Pengalaman di Bidang Administrasi</h2>
+        <div class="card">
+          <p>Saya memiliki pengalaman kerja lebih dari 3 tahun di bidang administrasi perkantoran, di mana saya terbiasa menangani berbagai tugas administratif seperti pengarsipan dokumen, pengelolaan data, penyusunan laporan harian hingga bulanan, serta mendukung kebutuhan operasional tim secara umum.</p>
+          <p>Dalam peran ini, saya juga dipercaya untuk menangani komunikasi internal dan eksternal dengan berbagai pihak, termasuk klien dan rekanan perusahaan. Keahlian saya dalam Microsoft Office dan sistem manajemen data menjadikan saya sebagai bagian penting dalam menjaga kelancaran informasi dan dokumentasi perusahaan.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>🛠️ Keahlian Administratif</h2>
+        <div class="card">
+          <h3>🗃️ Pengelolaan Dokumen</h3>
+          <p>Mengatur dan mengarsipkan dokumen fisik maupun digital dengan sistem yang rapi dan mudah ditelusuri kembali.</p>
+        </div>
+        <div class="card">
+          <h3>📅 Penjadwalan & Koordinasi</h3>
+          <p>Mengatur jadwal rapat, janji temu, serta mendukung kegiatan operasional tim dengan koordinasi yang efisien dan tepat waktu.</p>
+        </div>
+        <div class="card">
+          <h3>📊 Penyusunan Laporan</h3>
+          <p>Merangkum dan menyajikan data dalam bentuk laporan yang sistematis dan siap pakai untuk kebutuhan manajerial atau audit.</p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      &copy; 2025 Ririn Widyasari. Seluruh hak cipta dilindungi.
+    </footer>
+  </div>
+
+  <script>
+    // Animasi muncul saat scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+
+</body>
+</html>

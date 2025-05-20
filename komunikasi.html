@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Komunikasi</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      background: linear-gradient(to bottom right, #8d4781 60%, #f6c5e8 100%);
+
+    }
+
+    nav {
+      width: 200px;
+      background:#8d4781;
+      height: 100vh;
+      padding: 2rem 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 6px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgba(255,255,255,0.2);
+      transform: translateX(5px);
+    }
+
+    .main-content {
+      margin-left: 200px;
+      width: calc(100% - 200px);
+    }
+
+    header {
+      background: linear-gradient(to bottom right, #8d4781, #f6c5e8);
+
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .about img {
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      animation: fadeInUp 1.4s ease forwards;
+    }
+
+    .about-text {
+      flex: 1;
+      max-width: 500px;
+      margin: 20px;
+      color: white;
+      animation: fadeInUp 1.6s ease;
+    }
+
+    .about-text h2 {
+      color: whitesmoke;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: whitesmoke;
+      border-left: 5px solid #f6c5e8;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1.8s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #8d4781;
+    }
+
+    h2 {
+      color: whitesmoke;
+      margin-top: 3rem;
+    }
+
+    footer {
+      background: linear-gradient(#8d4781, #f6c5e8);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: whitesmoke;
+      margin-top: 3rem;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .main-content {
+        margin-left: 0;
+        width: 100%;
+      }
+
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about img {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="beranda.html">Beranda</a>
+    <a href="microsoft.html">Microsoft Office</a>
+    <a href="komunikasi.html">Komunikasi</a>
+    <a href="administrasi.html">Administrasi</a>
+    <a href="jasa.html">Jasa Ketik</a>
+    <a href="pengalaman.html">Pengalaman Kantor</a>
+    <a href="teknisi.html">Teknisi Jaringan</a>
+  </nav>
+
+  <div class="main-content">
+    <header>
+      <h1>Komunikasi</h1>
+      <p>Membangun hubungan kerja yang kuat dengan komunikasi yang efektif</p>
+    </header>
+
+    <div class="container">
+      <section class="about">
+        <img src="rin-biasa.jpeg" alt="Foto saat bekerja">
+        <div class="about-text">
+          <h2>Tentang Saya</h2>
+          <p>Saya adalah seorang profesional yang memiliki keterampilan komunikasi yang kuat, mampu bersosialisasi dengan baik dan cepat beradaptasi dengan lingkungan kerja baru. Pengalaman sebagai MC dalam berbagai acara telah membentuk saya menjadi komunikator yang percaya diri dan fleksibel dalam menghadapi berbagai situasi.</p>
+        </div>
+      </section>
+
+      <h2>Keahlian Komunikasi</h2>
+      <div class="skills">
+        <div class="card">
+          <h3>Pintar Bersosialisasi</h3>
+          <p>Mudah membangun koneksi dan menjaga hubungan profesional dengan rekan kerja dan klien.</p>
+        </div>
+        <div class="card">
+          <h3>Mudah Beradaptasi</h3>
+          <p>Cepat menyesuaikan diri dalam tim baru dan lingkungan kerja yang dinamis.</p>
+        </div>
+        <div class="card">
+          <h3>Pengalaman MC</h3>
+          <p>Pernah menjadi MC dalam berbagai acara kantor, seminar, dan event sosial dengan audiens besar.</p>
+        </div>
+      </div>
+
+      <h2>Soft Skills Lainnya</h2>
+      <div class="skills">
+        <div class="card">
+          <h3>Koordinasi Tim</h3>
+          <p>Mampu mengatur dan mengkoordinasi pekerjaan tim secara efektif untuk mencapai tujuan bersama.</p>
+        </div>
+        <div class="card">
+          <h3>Konten Planning</h3>
+          <p>Merancang rencana konten komunikasi internal dan eksternal yang terstruktur dan tepat sasaran.</p>
+        </div>
+        <div class="card">
+          <h3>Storytelling</h3>
+          <p>Menyampaikan ide dan presentasi melalui narasi yang kuat, menarik, dan mudah dipahami audiens.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2025 Ririn Widyasari. Seluruh hak cipta dilindungi.
+    </footer>
+  </div>
+
+</body>
+</html>
